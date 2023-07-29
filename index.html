@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laudos IPIC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Buscar Laudos</h1>
+        <form class="mt-4">
+            <div class="mb-3">
+                <label for="searchInput" class="form-label">Digite o nome do paciente:</label>
+                <input type="text" class="form-control" id="searchInput" placeholder="Nome do paciente">
+            </div>
+            <button type="button" class="btn btn-primary" id="searchButton">Buscar</button>
+        </form>
+
+        <div id="resultDiv" class="mt-5">
+            <h2>Resultado da busca:</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Arquivo</th>
+                        <th scope="col">Exame PDF</th>
+                    </tr>
+                </thead>
+                <tbody id="resultTableBody">
+                    <!-- Aqui serão adicionadas as linhas de resultado da pesquisa -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
